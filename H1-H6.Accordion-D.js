@@ -36,7 +36,7 @@ for (i; i < b.length; i++) {
 		/* Prepend span element in headers to hold utf-8 symbols for open and close */
 		b[i].prepend(document.createElement("span"));
 		bhSpan = b[i].querySelectorAll("span")[0];
-		bhSpan.appendChild(document.createTextNode("\u2726  "));
+		bhSpan.appendChild(document.createTextNode("\u2726 "));
 	//	bhSpan.style.color = "blue";
 	} 
 	/* For Elements other than H1 - H6 and SCRIPT */
