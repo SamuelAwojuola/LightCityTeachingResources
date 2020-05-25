@@ -21,5 +21,15 @@ h6 {
 		0 0 0 black,
 		-1px 1px 0 #000000,
 		1px 1px 0 white;
-	color: rgb(90, 16, 16);
+	color: #292d31;
+}
+
+h1 > span,
+h2 > span,
+h3 > span,
+h4 > span,
+h5 > span,
+h6 > span {
+	width: 100px;
+	color: #5f666d;
 }
