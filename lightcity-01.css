@@ -13,9 +13,9 @@ h4,
 h5,
 h6 {
 	font-family: 'Playfair Display', serif;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;
-	line-height: 72px;
+/* 	line-height: 72px; */
 	margin-bottom: 20px;
 	text-shadow: 2px 3px 3px #d0d0d0,
 		0 0 0 black,
