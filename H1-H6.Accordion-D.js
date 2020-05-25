@@ -36,7 +36,7 @@ for (i; i < b.length; i++) {
 		/* Prepend span element in headers to hold utf-8 symbols for open and close */
 		b[i].prepend(document.createElement("span"));
 		bhSpan = b[i].querySelectorAll("span")[0];
-		bhSpan.appendChild(document.createTextNode("\u21f2  "));
+		bhSpan.appendChild(document.createTextNode("\u2630  "));
 	//	bhSpan.style.color = "blue";
 	} 
 	/* For Elements other than H1 - H6 and SCRIPT */
@@ -56,8 +56,8 @@ function togglefunction() {
 	/* To toggle open/close utf-8 icons */
 	
 	var hspan = this.querySelectorAll("span")[0];
-	var sopen = "\u21f1  ";
-	var sclose = "\u21f2  ";
+	var sopen = "\u269E ";
+	var sclose = "\u2630 ";
 	if (hspan.innerHTML == sopen) {
 		hspan.innerHTML = sclose;
 		//  hspan.style.color = "blue";
