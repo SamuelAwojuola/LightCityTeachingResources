@@ -37,3 +37,13 @@ h6 > span {
 	width: 100px;
 	color: #5f666d;
 }
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #c7fff0;
+    border-radius: 5px;
+}
