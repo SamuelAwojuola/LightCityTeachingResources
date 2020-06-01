@@ -134,87 +134,66 @@
 	</ol>
 
 </body>
-<script>
-	var h1accordion = document.querySelectorAll("body > h1");
-	var firstH1 = h1accordion[0];
-
-	//Give index numbers to all H1s
-	for (i = 0; i < h1accordion.length; i++) {
-		var index = (i + 1) + ". ";
-		h1accordion[i].prepend(document.createTextNode(index));;
-	};
-
-	//Hide all none H1 elements
-	var h1nxtsib = firstH1.nextElementSibling;
-	while (h1nxtsib) {
-		if ((h1nxtsib.tagName != "H1") && (h1nxtsib.tagName != "SCRIPT")) {
-			h1nxtsib.style.display = "none";
-		}
-		h1nxtsib = h1nxtsib.nextElementSibling;
-	};
-
-
-
-	//None H1 toggle function	
-	h1accordion.forEach(function(elem) {
-		elem.addEventListener('click', togglefunction);
-		elem.style.cursor = "pointer";
-
-		//prepend span element in headers to hold utf-8 symbols for open and close
-		elem.prepend(document.createElement("span"));
-		let bhSpan = elem.querySelectorAll("span")[0];
-		bhSpan.appendChild(document.createTextNode("\u21f2  "));
-	  /*bhSpan.appendChild(document.createTextNode("\u271A  "));*/
-		//bhSpan.style.color = "blue";
-
-	});
-
-	function togglefunction() {
-		//To change the UTF-8 icons/symbols in the spans in the headers
-		var sclose = "\u21f2  ";
-	  /*var sclose = "\u271A  ";*/
-		var sopen = "\u21f1  ";
-	  /*var sopen = "\u2716  ";*/ 
-		
-		var hspan = this.querySelectorAll("span")[0];
-
-		if (hspan.innerHTML == sopen) {
-			hspan.innerHTML = sclose;
-			//hspan.style.color = "blue";
-		} else {
-			hspan.innerHTML = sopen;
-			//hspan.style.color = "red";
-		};
-		var h1nxtsib = this.nextElementSibling;
-
-		if ((h1nxtsib.style.display == "none") && (h1nxtsib.tagName != "SCRIPT")) {
-			h1nxtsib.style.display = "";
-		} else {
-			h1nxtsib.style.display = "none"
-		}
-		var h1nxtsib = h1nxtsib.nextElementSibling;
-	};
-</script>
-<script>
-	var refTagger = {
-		settings: {
-			bibleVersion: "NKJV",			
-			socialSharing: [],
-			customStyle : {
-				heading: {
-					fontFamily : "Arial, 'Helvetica Neue', Helvetica, sans-serif",
-					fontSize : "14px"
-				},
-				body   : {
-					fontSize : "20px"
-				}
-			}
-		}
-	};
-	(function(d, t) {
-		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-		g.src = "//api.reftagger.com/v2/RefTagger.js";
-		s.parentNode.insertBefore(g, s);
-	}(document, "script"));
-</script>
+        <script>
+        	var h1accordion = document.querySelectorAll("body > h1");
+        	var firstH1 = h1accordion[0];
+        
+        	//Give index numbers to all H1s
+        	for (i = 0; i < h1accordion.length; i++) {
+        		var index = (i + 1) + ". ";
+        		h1accordion[i].prepend(document.createTextNode(index));;
+        	};
+        
+        	//Hide all none H1 elements
+        	var h1nxtsib = firstH1.nextElementSibling;
+        	while (h1nxtsib) {
+        		if ((h1nxtsib.tagName != "H1") && (h1nxtsib.tagName != "SCRIPT")) {
+        			h1nxtsib.style.display = "none";
+        		}
+        		h1nxtsib = h1nxtsib.nextElementSibling;
+        	};
+        
+        
+        
+        	//None H1 toggle function	
+        	h1accordion.forEach(function(elem) {
+        		elem.addEventListener('click', togglefunction);
+        		elem.style.cursor = "pointer";
+        
+        		//prepend span element in headers to hold utf-8 symbols for open and close
+        		elem.prepend(document.createElement("span"));
+        		let bhSpan = elem.querySelectorAll("span")[0];
+        		bhSpan.appendChild(document.createTextNode("\u21f2  "));
+        	  /*bhSpan.appendChild(document.createTextNode("\u271A  "));*/
+        		//bhSpan.style.color = "blue";
+        
+        	});
+        
+        	function togglefunction() {
+        		//To change the UTF-8 icons/symbols in the spans in the headers
+        		var sclose = "\u21f2  ";
+        	  /*var sclose = "\u271A  ";*/
+        		var sopen = "\u21f1  ";
+        	  /*var sopen = "\u2716  ";*/ 
+        		
+        		var hspan = this.querySelectorAll("span")[0];
+        
+        		if (hspan.innerHTML == sopen) {
+        			hspan.innerHTML = sclose;
+        			//hspan.style.color = "blue";
+        		} else {
+        			hspan.innerHTML = sopen;
+        			//hspan.style.color = "red";
+        		};
+        		var h1nxtsib = this.nextElementSibling;
+        
+        		if ((h1nxtsib.style.display == "none") && (h1nxtsib.tagName != "SCRIPT")) {
+        			h1nxtsib.style.display = "";
+        		} else {
+        			h1nxtsib.style.display = "none"
+        		}
+        		var h1nxtsib = h1nxtsib.nextElementSibling;
+        	};
+        </script>
+	<script type="text/javascript" src="reftager.js"></script>
 </html>
