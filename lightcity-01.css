@@ -28,14 +28,14 @@ h6 {
 	color: #292d31;
 }
 
-h1 > span,
-h2 > span,
-h3 > span,
-h4 > span,
-h5 > span,
-h6 > span {
+h1 > span:first-child,
+h2 > span:first-child,
+h3 > span:first-child,
+h4 > span:first-child,
+h5 > span:first-child,
+h6 > span:first-child {
 	width: 100px;
-	color: #5f666d;
+	color: #5f666d;	
 }
 
 blockquote {
