@@ -6,7 +6,7 @@ body {
 	font-family: 'Playfair Display', serif;
 }
 
-body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6){
+body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
 	font-size: 20px;
 }
 
@@ -19,7 +19,7 @@ h6 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 600;
 	text-transform: uppercase;
-/* 	line-height: 72px; */
+	/* 	line-height: 72px; */
 	margin-bottom: 20px;
 	text-shadow: 2px 3px 3px #d0d0d0,
 		0 0 0 black,
@@ -37,29 +37,40 @@ h4 > span:first-child,
 h5 > span:first-child,
 h6 > span:first-child {
 	width: 100px;
-	color: #5f666d;	
+	color: #5f666d;
 }
 
 blockquote {
-    margin: 0;
+	margin: 0;
 }
 
 blockquote p {
-    padding: 15px;
-    background: #c7fff0;
-    border-radius: 5px;
+	padding: 15px;
+	background: #c7fff0;
+	border-radius: 5px;
 }
 
 blockquote p::before {
-    content: '\201C';
+	content: '\201C';
 }
 
 blockquote p::after {
-    content: '\201D';
+	content: '\201D';
 }
 
-  @media all and (min-width: 900px) {
-     .mobilebreak {
-         display: none;
-     }
-  }
+.sidenote {
+	color: #021515;
+	background-color: rgb(250, 255, 211);
+}
+
+.sidenote p {
+	font-size: 18px;
+	font-style: italic;
+	padding: 15px;
+}
+
+@media all and (min-width: 900px) {
+	.mobilebreak {
+		display: none;
+	}
+}
