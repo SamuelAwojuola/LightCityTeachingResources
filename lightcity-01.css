@@ -26,6 +26,8 @@ h6 {
 		-1px 1px 0 #000000,
 		1px 1px 0 white;
 	color: #292d31;
+	border-bottom: 5px solid grey;
+	margin-bottom: 0;
 }
 
 h1 > span:first-child,
@@ -55,3 +57,9 @@ blockquote p::before {
 blockquote p::after {
     content: '\201D';
 }
+
+  @media all and (min-width: 900px) {
+     .mobilebreak {
+         display: none;
+     }
+  }
