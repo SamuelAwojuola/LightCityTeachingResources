@@ -4,10 +4,13 @@ function tfunction() {
 	})
 };
 //FOR H1s ONLY
-/*var theaders = document.querySelectorAll("h1");
-for (i=0; i < theaders.length; i++) {
-	theaders[i].addEventListener('click', tfunction)
-};*/
+
+/*
+	var theaders = document.querySelectorAll("h1");
+	for (i=0; i < theaders.length; i++) {
+		theaders[i].addEventListener('click', tfunction)
+	};
+*/
 
 //FOR ALL HEADERS
 
