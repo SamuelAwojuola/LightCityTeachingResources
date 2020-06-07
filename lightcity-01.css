@@ -40,6 +40,11 @@ h6 > span:first-child {
 	color: #5f666d;
 }
 
+.emphasize {
+	color:black;
+	background-color:rgb(245, 220, 244);
+}
+
 blockquote {
 	margin: 0;
 }
